@@ -2,14 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Simple portfolio</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Simple Survey</h1>
+    <p id="description">Survey on cats and rats</p>
+    <form id="survey-form"></form>
+    <div>
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="formcontrol" placeholder="Enter your name" required></input>
+    </div>
+    <div>
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="formcontrol" placeholder="Enter your email" required></input>
+    </div>
+    <div>
+      <label id="number-label" for="number">Age (Optional)</label>
+      <input type="number" name="age" id="number" min="10" max="99" class="formcontrol" placeholder="Enter your age" ></input>
+    </div>
+    <div>
+      <p>Which best describes you?</p>
+      <select id="dropdown" name="roles" class="formcontrol" required>
+        <option disabled selected>Choose your role</option>
+        <option value="student">Student</option>
+        <option value="job">Full time worker</option>
+        <option value="prefer">Prefer not to say</option>
+        <option value="other">Other</option>
+    </select>  
+    </div>
+    <div>
+      <p>Would you reccomend others</p>
+      <input type="radio" name="user-reccomend" value="definateli" class="input-radio"> Definatel<br>
+      <input type="radio" name="user-reccomend" value="maybe " class="input-radio"> Maybe<br>
+      <input type="radio" name="user-reccomend" value="notsure" class="input-radio"> Not sure
+    </div>
+    <div>
+      <p>Would you like to reccomend</p>
+      <span class="clue">(check all that apply)</span>
+      <label>
+        <input name="prefer" value="fronted projects" type="checkbox" class="input-checkbox" >
+        Front End projects
+      </input>
+      </label>
+      <label>
+        <input name="prefer" value="backend projects" type="checkbox" class="input-checkbox" >
+        Back End projects
+      </input>
+      </label>
+      <label>
+        <input name="prefer" value="fullstack projects" type="checkbox" class="input-checkbox" >
+        Fullstack projects
+      </input>
+      </label>
+      <label>
+        <input name="prefer" value="ai projects" type="checkbox" class="input-checkbox" >
+        Ai projects
+      </input>
+      </label>
+      <label>
+        <input name="prefer" value="school projects" type="checkbox" class="input-checkbox" >
+        School based projects
+      </input>
+      </label>
+      <label>
+        <input name="prefer" value="other projects" type="checkbox" class="input-checkbox" >
+        Other projects
+      </input>
+      </label>
+    </div>
+    <div>
+      <p>Any other Comments</p>
+      <input id="textarea" class="comments" name="name" placeholder="Enter your comments" required></input>
+    </div>
+    <div> 
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
 
-    <h1>Hello world</h1>
-    <script  src="js/index.js"></script>
   </body>
 </html>
