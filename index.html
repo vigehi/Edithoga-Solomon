@@ -8,7 +8,9 @@
 
   <body>
     <h1 id="title">Simple Survey</h1>
-    <p id="description">Survey on cats and rats</p>
+    
+    <div class="container">
+      <p id="description">Survey on cats and rats</p>
     <form id="survey-form"></form>
     <div>
       <label id="name-label" for="name">Name</label>
@@ -74,11 +76,13 @@
     </div>
     <div>
       <p>Any other Comments</p>
-      <input id="textarea" class="comments" name="name" placeholder="Enter your comments" required></input>
+      <input id="comments" class="input-textarea" name="name" placeholder="Enter your comments" required></input>
     </div>
     <div> 
       <button type="submit" id="submit" class="submit-button">Submit</button>
     </div>
+  </form>
+  </div>
 
   </body>
 </html>
